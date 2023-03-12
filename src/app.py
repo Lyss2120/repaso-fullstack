@@ -21,8 +21,15 @@ app.url_map.strict_slashes = False
 
 # database condiguration
 db_url = os.getenv("DATABASE_URL")
+
+# error de conexion a la database..sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+#(Background on this error at: https://sqlalche.me/e/14/e3q8) 
+
+# if db_url is not None:   #esto me da que replace necesita dos argumentos y tiene uno
+#     app.config['SQLALCHEMY_DATABASE_URI'] = db_url.replace("sqlite:////tmp/test.db") 
+
 if db_url is not None:
-    app.config['SQLALCHEMY_DATABASE_URI'] = db_url.replace("postgres://", "postgresql://")
+    app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///site.db"   #cambiado por una uri de https://stackoverflow.com/questions/52637311/background-on-this-error-at-http-sqlalche-me-e-e3q8
 else:
     app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:////tmp/test.db"
 
