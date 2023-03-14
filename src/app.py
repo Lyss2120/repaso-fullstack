@@ -1,6 +1,8 @@
 """
 This module takes care of starting the API Server, Loading the DB and Adding the endpoints
+flask por fin instalado con el comando: python -m pip install flask....intentando qeu flask inserte users ocn su comando
 """
+
 import os
 from flask import Flask, request, jsonify, url_for, send_from_directory
 from flask_migrate import Migrate

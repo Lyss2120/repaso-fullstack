@@ -10,4 +10,7 @@ export const Footer = () => (
 );
 
 
-// The connection was rejected. Either the requested service isn’t running on the requested server/port, the proxy settings in vscode are misconfigured, or a firewall is blocking requests. Details: RequestError: connect ECONNREFUSED 127.0.0.1:3001.
+// flask instalado pero al ejecutar flask insert-test-users 5 no lo reconoce: 
+// C:\Users\lysiv\OneDrive\Escritorio\4geeks\codes-react\repaso-fullstack>flask insert-test-users 5
+// "flask" no se reconoce como un comando interno o externo,
+// programa o archivo por lotes ejecutable.
