@@ -8,6 +8,8 @@
 
 .counter{
     background-color: rgb(163,112,247);
+    color:rgb(68, 53, 211)
+
 }
 .counter>button{
     background-color: rgb(158,197,254);
@@ -18,4 +20,14 @@
 }
 .conditional>button{
     background-color: rgb(254,203,161);
+}
+
+.error{
+    background-color: rgb(227,93,106);
+    color:rgb(99, 243, 107)
+}
+.error>button{
+    background-color: rgb(192, 248, 139);
+    color:rgb(6, 179, 15)
+
 }

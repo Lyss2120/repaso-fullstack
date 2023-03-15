@@ -3,6 +3,7 @@ import { Context } from "../store/appContext";
 import "../../styles/home.css";
 import CounterApp from "../useState/CounterApp";
 import ConditionalCard from "../useState/ConditionalCard";
+import ErrorApp from "../useState/ErrorApp";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
@@ -13,7 +14,7 @@ export const Home = () => {
 
 			<CounterApp />
 			<ConditionalCard />
-
+			<ErrorApp />
 
 
 			{/* <h1>Hello Rigo!!</h1>
