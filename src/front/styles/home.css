@@ -31,3 +31,13 @@
     color:rgb(6, 179, 15)
 
 }
+
+.productApp{
+    background-color: rgb(93, 185, 227);
+    color:rgb(99, 101, 243)
+}
+.productApp>button{
+    background-color: rgb(133, 228, 43);
+    color:rgb(196, 10, 233)
+
+}

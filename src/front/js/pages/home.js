@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
-import CounterApp from "../useState/CounterApp";
-import ConditionalCard from "../useState/ConditionalCard";
-import ErrorApp from "../useState/ErrorApp";
+// import CounterApp from "../useState/CounterApp";
+// import ConditionalCard from "../useState/ConditionalCard";
+// import ErrorApp from "../useState/ErrorApp";
+import ProductApp from "../useState/ProductApp";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
@@ -11,11 +12,11 @@ export const Home = () => {
 
 	return (
 		<div className="text-center mt-5">
-
-			<CounterApp />
+			{/* <CounterApp />
 			<ConditionalCard />
 			<ErrorApp />
-
+ 			*/}
+			<ProductApp />
 
 			{/* <h1>Hello Rigo!!</h1>
 			<p>
