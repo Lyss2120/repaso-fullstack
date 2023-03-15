@@ -16,7 +16,7 @@ const CounterApp = () => {
     // }
 
     return (
-        <div>
+        <div className='counter'>
             <h1 className='py-5 text-secondary'>
                 CounterApp
             </h1>
