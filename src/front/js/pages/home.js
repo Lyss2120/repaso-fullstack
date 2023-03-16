@@ -4,7 +4,8 @@ import "../../styles/home.css";
 // import CounterApp from "../useState/CounterApp";
 // import ConditionalCard from "../useState/ConditionalCard";
 // import ErrorApp from "../useState/ErrorApp";
-import ProductApp from "../useState/ProductApp";
+// import ProductApp from "../useState/ProductApp";
+import ShoppingCart from "../useState/ShoppingCart";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
@@ -15,8 +16,9 @@ export const Home = () => {
 			{/* <CounterApp />
 			<ConditionalCard />
 			<ErrorApp />
- 			*/}
 			<ProductApp />
+			*/}
+			<ShoppingCart />
 
 			{/* <h1>Hello Rigo!!</h1>
 			<p>

@@ -33,11 +33,26 @@
 }
 
 .productApp{
-    background-color: rgb(93, 185, 227);
+    background-color: #085f63; 
     color:rgb(99, 101, 243)
 }
 .productApp>button{
     background-color: rgb(133, 228, 43);
     color:rgb(196, 10, 233)
 
+}
+
+.shoppingCart{
+    background-color: rgb(93, 227, 176);
+    color:#ff5959;
+}
+.shoppingCart button{
+    color: #ff5959;
+}
+
+.bg{
+    background-color: #085f63; 
+}
+.bg>button{
+    color: #facf5a; 
 }
