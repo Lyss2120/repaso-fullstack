@@ -48,19 +48,20 @@ const ShoppingCart = () => {
             <div className='bg'>
                 {
                     cart.map(product => (
-                        <div key={product.id}
-
-                        >
+                        <div key={product.id}>
                             <h1 className='mb-2'>
                                 {product.title}
                             </h1>
+
                             <p className='mb-2'>
                                 {product.description}
                             </p>
+
                             <button onClick={() => deleteProduct(product.id)}
                                 className='btn btn-outline-info mb-2'>
                                 delete
                             </button>
+                            
                             <button onClick={() => updateProduct({ id: product.id, title: 'newProduct updated', description: 'updated infodesdeformulario' })}
                                 className='btn btn-outline-info mb-2'>
                                 update
