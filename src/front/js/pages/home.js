@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
 // import CounterApp from "../useState/CounterApp";
@@ -7,11 +7,12 @@ import "../../styles/home.css";
 // import ProductApp from "../useState/ProductApp";
 // import ShoppingCart from "../useState/ShoppingCart";
 // import LifeCycle from "../useEffect/LifeCycle";
-import FetchCard from "../useEffect/FetchCard";
+// import FetchCard from "../useEffect/FetchCard";
+import Resize from "../useEffect/Resize";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
-	// const [ show, setShow] = useState(false);
+	const [show, setShow] = useState(false);
 
 	return (
 		<div className="text-center mt-5">
@@ -22,10 +23,15 @@ export const Home = () => {
 			<ProductApp />
 			<ShoppingCart />
 			<LifeCycle />
-			*/}
-
 			<FetchCard />
 
+			*/}
+
+			<button onClick={()=> setShow(!show)}
+			className='btn btn-outline-info'>show/hide</button>
+			{show &&
+				<Resize />
+			}
 			{/* <h1>Hello Rigo!!</h1>
 			<p>
 				<img src={rigoImageUrl} />
