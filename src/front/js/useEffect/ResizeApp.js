@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Resize = () => {
+const ResizeApp = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)//guarda el tamaño inicial de la pantalla /fijo
 
     const isMobile = windowWidth < 768;
@@ -30,4 +30,4 @@ const Resize = () => {
     )
 }
 
-export default Resize
+export default ResizeApp;

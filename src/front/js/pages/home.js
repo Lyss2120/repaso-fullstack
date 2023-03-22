@@ -6,9 +6,10 @@ import "../../styles/home.css";
 // import ErrorApp from "../useState/ErrorApp";
 // import ProductApp from "../useState/ProductApp";
 // import ShoppingCart from "../useState/ShoppingCart";
-// import LifeCycle from "../useEffect/LifeCycle";
+import LifeCycle from "../useEffect/LifeCycle";
+import FocusApp from "../useRef/FocusApp";
 // import FetchCard from "../useEffect/FetchCard";
-import Resize from "../useEffect/Resize";
+// import ResizeApp from "../useEffect/ResizeApp";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
@@ -22,16 +23,17 @@ export const Home = () => {
 			<ErrorApp />
 			<ProductApp />
 			<ShoppingCart />
-			<LifeCycle />
 			<FetchCard />
-
-			*/}
-
-			<button onClick={()=> setShow(!show)}
-			className='btn btn-outline-info'>show/hide</button>
+				<ResizeApp />
+					<button onClick={() => setShow(!show)}
+				className='btn btn-outline-info'>show/hide</button>
 			{show &&
-				<Resize />
-			}
+
+				<LifeCycle />
+			}	
+			*/}
+			<FocusApp />
+
 			{/* <h1>Hello Rigo!!</h1>
 			<p>
 				<img src={rigoImageUrl} />
