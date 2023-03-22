@@ -8,6 +8,7 @@ import "../../styles/home.css";
 // import ShoppingCart from "../useState/ShoppingCart";
 import LifeCycle from "../useEffect/LifeCycle";
 import FocusApp from "../useRef/FocusApp";
+import CopyApp from "../useRef/CopyApp";
 // import FetchCard from "../useEffect/FetchCard";
 // import ResizeApp from "../useEffect/ResizeApp";
 
@@ -30,10 +31,11 @@ export const Home = () => {
 			{show &&
 
 				<LifeCycle />
-			}	
-			*/}
+			}				
 			<FocusApp />
 
+			*/}
+			<CopyApp />
 			{/* <h1>Hello Rigo!!</h1>
 			<p>
 				<img src={rigoImageUrl} />
