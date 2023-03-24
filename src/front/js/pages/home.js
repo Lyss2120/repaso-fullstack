@@ -9,6 +9,8 @@ import "../../styles/home.css";
 import LifeCycle from "../useEffect/LifeCycle";
 import FocusApp from "../useRef/FocusApp";
 import CopyApp from "../useRef/CopyApp";
+import MediaPlayerApp from "../useRef/MediaPlayerApp";
+import ScrollAnimation from "../useRef/ScrollAnimation";
 // import FetchCard from "../useEffect/FetchCard";
 // import ResizeApp from "../useEffect/ResizeApp";
 
@@ -33,9 +35,17 @@ export const Home = () => {
 				<LifeCycle />
 			}				
 			<FocusApp />
-
-			*/}
 			<CopyApp />
+			<MediaPlayerApp/>
+			<ScrollAnimation />
+			*/}
+
+			{/* referencias mutables en react hay 2 variables persistentes: 1° estado cuando el estado cambia 
+			se genera un nuevo render. 2° referecias mutables: es var persistente tambien pero se le pueden
+			asignar valores directamente sin una var de actualizacion (como el setstate) pero al cambiar no
+			genera una nueva renderizacion */}
+<RendersApp />
+
 			{/* <h1>Hello Rigo!!</h1>
 			<p>
 				<img src={rigoImageUrl} />
