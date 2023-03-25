@@ -13,6 +13,7 @@ import MediaPlayerApp from "../useRef/MediaPlayerApp";
 import ScrollAnimation from "../useRef/ScrollAnimation";
 import RendersApp from "../useRef/RendersApp";
 import LoadingApp from "../useRef/LoadingApp";
+import AppRouter from "../routers/AppRouter";
 // import FetchCard from "../useEffect/FetchCard";
 // import ResizeApp from "../useEffect/ResizeApp";
 
@@ -46,11 +47,10 @@ export const Home = () => {
 			se genera un nuevo render. 2° referecias mutables: es var persistente tambien pero se le pueden
 			asignar valores directamente sin una var de actualizacion (como el setstate) pero al cambiar no
 			genera una nueva renderizacion
-			<RendersApp />
-			*/}
-
+			<RendersApp />*/}
 			<LoadingApp />
 
+			
 		</div>
 	);
 };
