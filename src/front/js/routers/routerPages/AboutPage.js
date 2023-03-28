@@ -6,7 +6,7 @@ import NavigateHistorial from '../routerComponents/navigateHistorial.jsx'
 const AboutPage = () => {
   return (
     <div className='container py-5 text-center' >
-      <h3 className='py-5' >AboutPage</h3>
+      <h3 className='pt-5' >AboutPage</h3>
       <SubMenu />
       <Outlet />
       {/* <NavigateHistorial /> */}

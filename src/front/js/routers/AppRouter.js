@@ -12,6 +12,7 @@ import NavbarComponent from './routercomponents/NavBarComponent.jsx';
 import Mision from './routerPages/AboutMenuPages/Mision.jsx';
 import Vision from './routerPages/AboutMenuPages/Vision.jsx';
 import AboutPage from './routerPages/AboutPage';
+import About from './routerPages/AboutMenuPages/About.jsx';
 
 
 
@@ -30,7 +31,8 @@ const AppRouter = () => {
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path='/about' element={<AboutPage />}>
-                    <Route index path="mision" element={<Mision />} />
+                    <Route index path="about" element={<About />} />
+                    <Route path="mision" element={<Mision />} />
                     <Route path="vision" element={<Vision />} />
                 </Route>
                 {/* <Route path='/about' element={<AboutPage />} >
