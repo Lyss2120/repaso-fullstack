@@ -47,6 +47,12 @@ const AppRouter = () => {
         </Router>
     )
 }
+
+
+export default AppRouter
+
+{/*     
+
 // rutas aceptadas router v.6
 // /groups
 // /groups/admin
@@ -55,9 +61,7 @@ const AppRouter = () => {
 // /files/*
 // /files/:id/*
 
-export default AppRouter
-
-{/*     1°
+1°
         <BrowserRouter>
             <Menu />
             <Routes>
