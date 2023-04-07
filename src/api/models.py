@@ -20,3 +20,23 @@ class User(db.Model):
             "email": self.email,
             # do not serialize the password, its a security breach
         }
+    
+    
+'''   
+
+    esta funcion tiene tres partes
+    def get_member(self, id):
+        # fill this method and update the return
+        user = list(filter(lambda m: m["id"]==id, self._members))
+        return user
+        
+    1.-Using the list() constructor to make a List:
+    thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
+    print(thislist)
+    2.-The filter(function, iterable) function returns an iterator where the items are filtered through a function to test if the item is accepted or not.
+    3.-lambda function
+    x = lambda a : a + 10
+print(x(5))
+    
+    
+'''
