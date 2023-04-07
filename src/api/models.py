@@ -36,7 +36,7 @@ class User(db.Model):
     2.-The filter(function, iterable) function returns an iterator where the items are filtered through a function to test if the item is accepted or not.
     3.-lambda function
     x = lambda a : a + 10
-print(x(5))
+    print(x(5))
     
     
 '''
